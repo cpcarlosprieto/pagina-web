@@ -39,6 +39,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .content {
@@ -49,6 +51,7 @@ a:hover {
     border-radius: 4px;
     position: relative;
     overflow: scroll;
+
 }
 
 .content {
@@ -202,6 +205,7 @@ strong {
         text-align: center;
     }
 }
+
 
 
 /* This only changes this particular animation duration */
