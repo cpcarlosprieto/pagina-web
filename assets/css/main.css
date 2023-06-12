@@ -177,11 +177,30 @@ strong {
 
 }
 
-@media (min-height:550px) {
+@media (min-height:500px) {
     .content {
         height: 500px;
     }
 
+
+}
+
+@media screen and (max-width:500px) {
+
+    .wave {
+        display: none;
+    }
+
+    .content {
+        width: 95%;
+        border: none;
+        text-align: justify;
+    }
+
+    .tittle-item {
+        font-size: 35px;
+        text-align: center;
+    }
 }
 
 
