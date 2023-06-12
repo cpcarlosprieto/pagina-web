@@ -194,7 +194,7 @@ strong {
         display: none;
     }
 
-    .content {
+    .content .container {
         width: 95%;
         border: none;
         text-align: justify;
