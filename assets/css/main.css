@@ -5,6 +5,19 @@ Negro: #999
 Gris: #f5f5f5
 Rosa: #d500f9 
 */
+body {
+    overflow-x: hidden;
+    /* Evita el desplazamiento horizontal */
+    overflow-y: auto;
+    /* Añade desplazamiento vertical si es necesario */
+    max-width: 100%;
+    /* Asegura que el body no exceda el ancho de la pantalla */
+    padding: 0;
+    /* Elimina los márgenes internos para evitar el desbordamiento */
+    margin: 0;
+    /* Elimina los márgenes externos para evitar el desbordamiento */
+}
+
 html {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -180,10 +193,15 @@ strong {
 
 }
 
-@media (min-height:500px) {
+@media (min-height:550px) {
     .content {
         height: 500px;
     }
+
+    .container {
+        width: auto;
+    }
+
 
 
 }
