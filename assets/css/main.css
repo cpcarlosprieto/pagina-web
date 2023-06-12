@@ -3,96 +3,128 @@ Rosa: #C642E
 Morado: #642B73
 Negro: #999
 Gris: #f5f5f5
-Rosa: #d500f9
+Rosa: #d500f9 
 */
-html{
+html {
     font-family: 'Nunito Sans', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: #d500f9;
 }
-img{
+
+img {
     max-width: 100%;
 }
-a:hover{
+
+a:hover {
     opacity: 0.8;
 }
 
-.tittle{
+.tittle {
     text-transform: uppercase;
     text-align: center;
+
 }
-.container{
-    background: #642B73; /* Respaldo Fondo Solido*/
-    background: -webkit-linear-gradient(to right, #c6426e, #642b73 ); /* Degradados*/
-    background: linear-gradient(to right, #c6426e, #642b73); /* Degradados*/
+
+.container {
+    background: #642B73;
+    /* Respaldo Fondo Solido*/
+    background: -webkit-linear-gradient(to right, #c6426e, #642b73);
+    /* Degradados*/
+    background: linear-gradient(to right, #c6426e, #642b73);
+    /* Degradados*/
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.content{
+
+.content {
     max-width: 960px;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: #fff;
     border-radius: 4px;
     position: relative;
-    overflow:scroll;
+    overflow: scroll;
 }
-.content{
+
+.content {
     padding: 1em;
 }
-td{
+
+td {
     display: block;
     width: 100%;
 }
-td:nth-of-type(1){
+
+td:nth-of-type(1) {
     font-size: 1.5em;
     font-weight: bold;
     color: #642B73;
 }
-th{
+
+th {
     display: none;
 }
-.actions{
+
+.actions {
     position: absolute;
     top: 1em;
     right: 1em;
 }
-.close{
+
+.close {
     height: 40px;
     width: 40px;
     color: white;
     border-radius: 50%;
     background-color: #642b73;
     display: inline-block;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     font-weight: 300;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.paragraph{
+
+.paragraph {
     line-height: 1.8em;
     font-weight: 300;
+    font-size: 16px;
 }
-.fa-star, .fa-star-o{
+
+strong {
+    color: #333333;
+    /* Cambiar el color del texto a un tono más oscuro */
+    font-weight: bold;
+    /* Hacer el texto negrita */
+}
+
+.fa-star,
+.fa-star-o {
     color: #ffc400;
 }
-.table{
+
+.table {
     width: 100%;
     border-spacing: 0;
 }
-.table td, .table th{
+
+.table td,
+.table th {
     padding: 1em;
     text-align: left;
 }
-.table tr:nth-child(even){background-color: #f3e5f5;}
 
-.tittle-item{
+.table tr:nth-child(even) {
+    background-color: #f3e5f5;
+}
+
+.tittle-item {
     /*border-bottom-style: solid;
     border-width: 2px;
     border-color: #c6426e;*/
@@ -100,53 +132,72 @@ th{
     border-bottom: solid 2px #c6426e;
     padding-bottom: 1em;
 }
-.addres{
+
+.addres {
     font-weight: bold;
     color: #642b73;
     font-size: 1.2em;
     margin-top: 2em;
     display: inline-block;
 }
-.main-image{
+
+.main-image {
     float: left;
     margin-right: 1em;
     height: 250px;
 }
-.position{
+
+.position {
     background-color: #c6426e;
     color: white;
     padding: 0.5em;
     border-radius: 4px;
     margin-right: 0.5em;
 }
-@media(min-width:900px){
-    th{
+
+@media(min-width:900px) {
+    th {
         display: table-cell;
 
     }
-    td{
+
+    td {
         width: auto;
         display: table-cell;
     }
-    td:nth-of-type(1){
+
+    td:nth-of-type(1) {
         font-size: 1em;
     }
-    .content{
+
+    .content {
         padding: 1.8em;
     }
+
+
 }
+
 @media (min-height:550px) {
-    .content{
+    .content {
         height: 500px;
     }
+
 }
+
+
 /* This only changes this particular animation duration */
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
 }
 
-  /* This changes all the animations globally */
+/* This changes all the animations globally */
 :root {
     --animate-duration: 800ms;
     --animate-delay: 2s;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
