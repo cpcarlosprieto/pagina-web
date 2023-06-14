@@ -107,6 +107,23 @@ th {
     justify-content: center;
 }
 
+.close2 {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642b73;
+    /*display: inline-block;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+
+}
+
 .paragraph {
     line-height: 1.8em;
     font-weight: 300;
